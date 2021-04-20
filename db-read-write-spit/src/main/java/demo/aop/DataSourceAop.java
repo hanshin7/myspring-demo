@@ -19,7 +19,7 @@ public class DataSourceAop {
         boolean clear = true;
         try {
             DataSourceThread.set();
-            System.out.println("切换数据源");
+            System.out.println("切换为slave数据源");
             return pjp.proceed();
         } finally {
             if (clear) {

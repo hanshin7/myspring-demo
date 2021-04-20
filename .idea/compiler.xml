@@ -6,17 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="seata-accout-service" />
         <module name="seata-storage-service" />
         <module name="db-read-write-spit" />
+        <module name="dubbo-order-service" />
+        <module name="seata-accout-service" />
         <module name="seata-busi-service" />
+        <module name="dubbo-user-service" />
         <module name="seata-order-service" />
+        <module name="dubbo-api" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="db-read-write-spit" options="-parameters" />
+      <module name="dubbo-api" options="-parameters" />
+      <module name="dubbo-order-service" options="-parameters" />
+      <module name="dubbo-user-service" options="-parameters" />
       <module name="seata-accout-service" options="-parameters" />
       <module name="seata-busi-service" options="-parameters" />
       <module name="seata-order-service" options="-parameters" />

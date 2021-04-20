@@ -20,6 +20,9 @@
         <module>seata-accout-service</module>
         <module>seata-storage-service</module>
         <module>db-read-write-spit</module>
+        <module>dubbo-api</module>
+        <module>dubbo-order-service</module>
+        <module>dubbo-user-service</module>
     </modules>
 
     <properties>

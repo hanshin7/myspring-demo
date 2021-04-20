@@ -21,7 +21,7 @@ import java.util.Map;
  * create by hanshin on 2021/4/19
  */
 @Configuration
-@MapperScan("com.bjiang.datasource.read.write.dao")
+@MapperScan("demo.mapper")
 public class ReadOrWriteDaraSource {
     /**
      * 主库配置注入
@@ -64,7 +64,7 @@ public class ReadOrWriteDaraSource {
     @Bean
     public SqlSessionFactory sessionFactory(@Qualifier("dynamic") DataSource dynamicDataSource) throws Exception {
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
-        bean.setTypeAliasesPackage("com.bjiang.datasource.read.write.dao");
+        bean.setTypeAliasesPackage("demo.mapper");
         bean.setDataSource(dynamicDataSource);
         return bean.getObject();
     }
