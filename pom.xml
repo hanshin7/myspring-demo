@@ -23,6 +23,7 @@
         <module>dubbo-api</module>
         <module>dubbo-order-service</module>
         <module>dubbo-user-service</module>
+        <module>mvc-demo</module>
     </modules>
 
     <properties>

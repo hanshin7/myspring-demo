@@ -12,6 +12,7 @@
         <module name="seata-accout-service" />
         <module name="seata-busi-service" />
         <module name="dubbo-user-service" />
+        <module name="mvc-demo" />
         <module name="seata-order-service" />
         <module name="dubbo-api" />
       </profile>
@@ -23,6 +24,7 @@
       <module name="dubbo-api" options="-parameters" />
       <module name="dubbo-order-service" options="-parameters" />
       <module name="dubbo-user-service" options="-parameters" />
+      <module name="mvc-demo" options="-parameters" />
       <module name="seata-accout-service" options="-parameters" />
       <module name="seata-busi-service" options="-parameters" />
       <module name="seata-order-service" options="-parameters" />
