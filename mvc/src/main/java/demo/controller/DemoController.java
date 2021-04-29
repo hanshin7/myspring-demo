@@ -17,9 +17,9 @@ public class DemoController {
     private MyDemoService myDemoService;
 
     @MyRequestMapping("/test")
-    public String test(@MyRequestParam("key") String key){
-        System.out.println(key);
+    public String test(){
         String r = myDemoService.test();
+        System.out.println(r);
         return r;
     }
 }
